@@ -1,0 +1,24 @@
+.banner{
+    background: #b8ccca;
+    min-height: 300px;
+    text-align: center;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    padding: 20px 16px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.media-handler{
+    height: 45px;
+    width: 45px;
+    margin: 16px 16px 0 0;
+    border-radius: 50%;
+}

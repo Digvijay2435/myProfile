@@ -1,0 +1,10 @@
+.userDetailWrapper{
+    background: black;
+    padding: 16px;
+}
+
+@media(max-width:720px){
+    .userDetailWrapper{
+        text-align: center;
+    }
+}

@@ -1,0 +1,19 @@
+<template>
+    <div class="userDetailWrapper">
+        <lightning-layout multiple-rows>
+            
+            <lightning-layout-item size="12">
+                <div if:true={recordId}>
+                    <c-basic-user-info record-id ={recordId} object-api-name ={obejctApiName}></c-basic-user-info>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <div if:true={recordId}>
+                    <c-user-trailhead-stats badges={badges} points={points} trails={trails} rank={rank}></c-user-trailhead-stats>
+                </div>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </div>
+</template>

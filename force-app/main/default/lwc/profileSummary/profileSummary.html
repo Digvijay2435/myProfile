@@ -1,0 +1,18 @@
+<template>
+    <div class="banner">
+        <img src ={userPic} class="profile-pic">
+        <div class="name">{fullName}</div>
+        <div class="designation">{designation} at {companyName}</div>
+        <div class="location">{city}, {country}</div>
+
+
+        <div>
+            <a href={linkedinUrl} target="_blank">
+                <img src={linkedinPic} class="media-handler">
+            </a>
+            <a href={trailheadUrl} target="_blank">
+                <img src={trailheadPic} class="media-handler">
+            </a>
+        </div>
+    </div>
+</template>

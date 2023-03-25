@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>User Details</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property label="recordId" name="recordId" type="String" />
+            <property label="Object API" name="obejctApiName" type="String" />
+            <property label="Badges" name="badges" type="String" />
+            <property label="Points" name="points" type="String" />
+            <property label="Trails" name="trails" type="String" />
+            <property label="Trailhead Rank" name="rank" type="String" datasource="Mountaineer, Ranger, Explorer"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

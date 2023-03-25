@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-var-m-bottom_medium">Technical Skills</h2>
+        <template for:each={technicalSkills} for:item="tech">
+            <lightning-badge key={tech} label={tech} class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        </template>
+
+        <h2 class="slds-var-m-bottom_medium">Version Control</h2>
+        <template for:each={versionControl} for:item="ver">
+            <lightning-badge key={ver} label={ver} class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        </template>
+
+        <h2 class="slds-var-m-bottom_medium">Software and Tools</h2>
+        <template for:each={softwareAndTools} for:item="soft">
+            <lightning-badge key={soft} label={soft} class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,32 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Summary">
+            <template if:true={recordId}>
+                <c-user-summary record-id={recordId} object-api-name={objectApiName}></c-user-summary>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Work Experience">
+            <template if:true={recordId}>
+                <c-work-experience-tab record-id={recordId}></c-work-experience-tab>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Skills">
+            <template if:true={recordId}>
+                <c-skills-tab record-id={recordId}></c-skills-tab>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Personal Projects">
+            <c-personal-project-tab></c-personal-project-tab>
+        </lightning-tab>
+        <lightning-tab label="Certification">
+            <template if:true={recordId}>
+                <c-certification-tab record-id={recordId}></c-certification-tab>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Education">
+            <template if:true={recordId}>
+                <c-education-tab record-id={recordId}></c-education-tab>
+            </template>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

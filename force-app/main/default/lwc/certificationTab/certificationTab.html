@@ -1,0 +1,29 @@
+<template>
+
+    <h2 class="slds-var-m-bottom_medium">Salesforce Certifications</h2>
+
+    <lightning-layout class="slds-var-m-bottom_medium" multiple-rows>
+        <template for:each={sfCertData} for:item="sfCerts">
+            <lightning-layout-item key={sfCerts} class="slds-p-around_xx-small"  size="12" small-device-size="6" medium-device-size="4"
+                large-device-size="3">
+                <div class="cert-box">
+                    <img src={sfCertImg} alt="SF Cert Image" />
+                    <span>{sfCerts}</span>
+                </div>
+            </lightning-layout-item>
+        </template>
+    </lightning-layout>
+
+    <h2 class="slds-var-m-bottom_medium">Other Certifications</h2>
+    <lightning-layout class="slds-var-m-bottom_medium">
+        <template for:each={otherCertsData} for:item="otherCerts">
+            <lightning-layout-item key={otherCerts} class="slds-p-around_xx-small" size="12" small-device-size="6" medium-device-size="4"
+                large-device-size="3">
+                <div class="cert-box">
+                    <img src={otherCertImg} alt="Other Cert Image" />
+                    <span>{otherCerts}</span>
+                </div>
+            </lightning-layout-item>
+        </template>
+    </lightning-layout>
+</template>

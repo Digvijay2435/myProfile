@@ -1,0 +1,28 @@
+<template>
+    <div class="box">
+        <lightning-layout>
+            <lightning-layout-item>
+                <img src={image} style=" width:100%; height:auto; border: radius 4px;">
+            </lightning-layout-item>
+
+            <lightning-layout-item size="8" padding="horizontal-medium">
+                <lightning-layout  multiple-rows vertical-align="center">
+                    <lightning-layout-item size="12" padding="around-small">
+                        <p class="slds-text-heading_medium">{name}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                         <lightning-button variant="brand" label="Get Information" onclick={getInfoHandler}></lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                       <div if:true={results}>
+                            Veg / Non-Vegetarian : {foodType} <br/>
+                            Health Score : {results.healthScore}
+                       </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </div>
+</template>
